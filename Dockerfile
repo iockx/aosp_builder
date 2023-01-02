@@ -8,7 +8,7 @@ MAINTAINER qiushaox@gmail.com
 RUN ln -sf /bin/bash /bin/sh
 
 # add user 
-RUN useradd -d /home/builder -m builder
+RUN useradd -d /home/builder -m iock
 ADD user.txt /home/builder
 RUN chpasswd < /home/builder/user.txt
 RUN rm /home/builder/user.txt
